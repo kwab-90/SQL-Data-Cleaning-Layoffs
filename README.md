@@ -19,42 +19,44 @@ The raw dataset includes company-level layoff data, such as:
 
 📋 Cleaning Steps
 ✅ Step 1: Remove Duplicates
-Used ROW_NUMBER() with PARTITION BY to identify duplicate rows based on key fields
 
-Deleted duplicate entries from a staging table
+- Used ROW_NUMBER() with PARTITION BY to identify duplicate rows based on key fields
 
-Created new clean tables (layoffs_staging, layoffs_staging2) for safe transformations
+- Deleted duplicate entries from a staging table
+
+- Created new clean tables (layoffs_staging, layoffs_staging2) for safe transformations
 
 ✅ Step 2: Standardise Formatting
-Trimmed extra spaces from text fields (company, etc.)
 
-Unified inconsistent naming (e.g., "Crypto - Blockchain" → "Crypto", "United States of America" → "United States")
+- Trimmed extra spaces from text fields (company, etc.)
 
-Converted date from TEXT to proper DATE format using STR_TO_DATE()
+- Unified inconsistent naming (e.g., "Crypto - Blockchain" → "Crypto", "United States of America" → "United States")
+
+- Converted date from TEXT to proper DATE format using STR_TO_DATE()
 
 ✅ Step 3: Handle Missing or Null Values
-Identified rows where total_laid_off and percentage_laid_off were null
 
-Imputed missing industry values by joining on company name
+- Identified rows where total_laid_off and percentage_laid_off were null
 
-Removed rows with no useful data after imputation
+- Imputed missing industry values by joining on company name
+
+- Removed rows with no useful data after imputation
 
 ✅ Step 4: Final Cleanup
-Deleted completely empty rows (no layoffs data)
 
-Dropped temporary columns (e.g., row_num) used for processing
+- Deleted completely empty rows (no layoffs data)
+
+- Dropped temporary columns (e.g., row_num) used for processing
 
 🧠 Key Skills Demonstrated
-Advanced SQL: CTEs, window functions, joins, conditional updates
 
-Data profiling and cleansing logic
+- Advanced SQL: CTEs, window functions, joins, conditional updates
 
-Schema management and data staging best practices
+- Data profiling and cleansing logic
 
-Preparing raw datasets for business analysis
+- Schema management and data staging best practices
 
-🗃️ Technologies Used
-SQL (MySQL syntax)
+- Preparing raw datasets for business analysis
 
 Data cleaning logic suitable for ETL pipelines or analytics staging layers
 
