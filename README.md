@@ -17,11 +17,11 @@ The raw dataset includes company-level layoff data, such as:
 
 - Layoff date
 
-  
 
 📋 Cleaning Steps
 
 ✅ Step 1: Remove Duplicates
+
 
 - Used ROW_NUMBER() with PARTITION BY to identify duplicate rows based on key fields
 
