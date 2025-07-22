@@ -49,9 +49,7 @@ The raw dataset includes company-level layoff data, such as:
 Data cleaning logic suitable for ETL pipelines or analytics staging layers
 
 🧪 ****Example Queries****
-sql
-Copy
-Edit
+
 -- Remove leading/trailing spaces from company names
 
   UPDATE layoffs_staging2
