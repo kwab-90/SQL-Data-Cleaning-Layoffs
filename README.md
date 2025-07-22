@@ -16,8 +16,10 @@ The raw dataset includes company-level layoff data, such as:
 - Stage and funding raised
 
 - Layoff date
+  
 
 📋 Cleaning Steps
+
 ✅ Step 1: Remove Duplicates
 
 - Used ROW_NUMBER() with PARTITION BY to identify duplicate rows based on key fields
@@ -25,6 +27,7 @@ The raw dataset includes company-level layoff data, such as:
 - Deleted duplicate entries from a staging table
 
 - Created new clean tables (layoffs_staging, layoffs_staging2) for safe transformations
+  
 
 ✅ Step 2: Standardise Formatting
 
@@ -33,6 +36,7 @@ The raw dataset includes company-level layoff data, such as:
 - Unified inconsistent naming (e.g., "Crypto - Blockchain" → "Crypto", "United States of America" → "United States")
 
 - Converted date from TEXT to proper DATE format using STR_TO_DATE()
+  
 
 ✅ Step 3: Handle Missing or Null Values
 
@@ -41,12 +45,14 @@ The raw dataset includes company-level layoff data, such as:
 - Imputed missing industry values by joining on company name
 
 - Removed rows with no useful data after imputation
+  
 
 ✅ Step 4: Final Cleanup
 
 - Deleted completely empty rows (no layoffs data)
 
 - Dropped temporary columns (e.g., row_num) used for processing
+  
 
 🧠 Key Skills Demonstrated
 
@@ -57,6 +63,7 @@ The raw dataset includes company-level layoff data, such as:
 - Schema management and data staging best practices
 
 - Preparing raw datasets for business analysis
+  
 
 Data cleaning logic suitable for ETL pipelines or analytics staging layers
 
