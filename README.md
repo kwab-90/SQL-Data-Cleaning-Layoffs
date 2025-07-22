@@ -65,9 +65,11 @@ sql
 Copy
 Edit
 -- Remove leading/trailing spaces from company names
-UPDATE layoffs_staging2
-SET company = TRIM(company);
+
+  UPDATE layoffs_staging2
+  SET company = TRIM(company);
 
 -- Convert date from string to date format
-UPDATE layoffs_staging2
-SET `date` = STR_TO_DATE(`date`, '%m/%d/%Y');
+
+  UPDATE layoffs_staging2
+  SET `date` = STR_TO_DATE(`date`, '%m/%d/%Y');
