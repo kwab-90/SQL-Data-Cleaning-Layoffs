@@ -16,6 +16,7 @@ The raw dataset includes company-level layoff data, such as:
 - Stage and funding raised
 
 - Layoff date
+
   
 
 📋 Cleaning Steps
