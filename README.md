@@ -2,7 +2,7 @@
 
 This project focuses on cleaning and standardising a real-world dataset of tech layoffs using SQL. The goal is to prepare the data for accurate analysis by identifying and removing duplicates, fixing formatting issues, handling null values, and standardising inconsistent entries.
 
-📦 ****Dataset: layoffs****
+## 📦  Dataset: layoffs
 
 The raw dataset includes company-level layoff data, such as:
 
@@ -13,7 +13,7 @@ The raw dataset includes company-level layoff data, such as:
 - Stage and funding raised
 - Layoff date
 
-📋 ****Cleaning Steps****
+## 📋 Cleaning Steps
 
 ✅ Step 1: Remove Duplicates
 
@@ -40,7 +40,7 @@ The raw dataset includes company-level layoff data, such as:
 - Deleted completely empty rows (no layoffs data)
 - Dropped temporary columns (e.g., row_num) used for processing
   
-🧠 ****Key Skills Demonstrated****
+## 🧠 Key Skills Demonstrated
 
 - Advanced SQL: CTEs, window functions, joins, conditional updates
 - Data profiling and cleansing logic
@@ -49,7 +49,7 @@ The raw dataset includes company-level layoff data, such as:
   
 Data cleaning logic suitable for ETL pipelines or analytics staging layers
 
-🧪 ****Example Queries****
+## 🧪 Example Queries
 
 -- Remove leading/trailing spaces from company names
 
