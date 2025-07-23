@@ -1,4 +1,4 @@
-# SQL-Data-Cleaning-Layoffs (Part 1)
+# SQL-Data-Cleaning-Layoffs
 
 This project focuses on cleaning and standardising a real-world dataset of tech layoffs using SQL. The goal is to prepare the data for accurate analysis by identifying and removing duplicates, fixing formatting issues, handling null values, and standardising inconsistent entries.
 
